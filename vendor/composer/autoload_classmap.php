@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'User' => $baseDir . '/app/models/User.php',
+    'NewProject\\Filters\\AuthFilter' => $baseDir . '/app/NewProject/Filters/AuthFilter.php',
+    'NewProject\\Repositories\\UserRepository' => $baseDir . '/app/NewProject/Repositories/UserRepository.php',
 );
