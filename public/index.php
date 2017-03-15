@@ -1,9 +1,8 @@
 <?php
 
-use NewProject\Repositories\UserRepository as UserRepository;
-use NewProject\Filters\AuthFilter as AuthFilter;
-use NewProject\Routes\Routes as Routes;
-//use NewProject\Repositories;
+use PHPonboardSM\Repositories\UserRepository as UserRepository;
+use PHPonboardSM\Filters\AuthFilter as AuthFilter;
+use PHPonboardSM\Routes\Routes as Routes;
 
 require_once 'app/start.php';
 

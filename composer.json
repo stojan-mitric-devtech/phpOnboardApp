@@ -1,7 +1,7 @@
 {
 	"autoload": {
 		"psr-4": {
-			"NewProject\\": "app/NewProject"
+			"PHPonboardSM\\": "app/PHPonboardSM"
 		}
 	}
 }

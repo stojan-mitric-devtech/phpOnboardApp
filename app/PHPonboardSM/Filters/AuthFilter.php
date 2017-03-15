@@ -1,4 +1,6 @@
-<?php namespace NewProject\Filters;
+<?php
+
+namespace PHPonboardSM\Filters;
 
 class AuthFilter
 {
@@ -7,3 +9,5 @@ class AuthFilter
 		die('Hello from Authfilter class');
 	}
 }
+
+?>
