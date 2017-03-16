@@ -5,7 +5,7 @@ How to run app:
 
 1) Install composer
 
-2) Navigate to phpOnboardApp folder and run **composer install** and ** composer dump-autoload -o** in console 
+2) Navigate to phpOnboardApp folder and run **composer install** and **composer dump-autoload -o** in console 
 
 3) Navigate to public folder and run **php -S localhost:8000** in console
 
