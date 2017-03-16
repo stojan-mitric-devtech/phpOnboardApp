@@ -1,4 +1,5 @@
-<?php namespace NewProject\Repositories;
+<?php
+namespace PHPonboardSM\Repositories;
 
 class UserRepository
 {

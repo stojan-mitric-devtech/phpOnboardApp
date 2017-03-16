@@ -1,9 +1,10 @@
-<?php namespace NewProject\Routes;
+<?php
+namespace PHPonboardSM\Routes;
 
 class Routes
 {
-	private $_uri = '';
-	private $_callback = '';
+	private $_uri = array();
+	private $_callback = array();
 
 	public function add($uri= '', $callback ='') 
 	{
@@ -13,11 +14,11 @@ class Routes
 
 	public function run() 
 	{
-		$url = isset($_GET['route']) ? '/' . $_GET['route'] : '/' ;
-		//echo $url;
-		foreach($this->_uri as $key => $value) 
+        $url = isset($_GET['route']) ? '/' . $_GET['route'] : '/' ;
+
+		foreach($this->_uri as $key => $value)
 		{
-			//echo $key . '' . $value, '<br>';
+
 			if(preg_match("#^$value$#", $url, $params)){
 				array_shift($params);
 				//return callback if the url match with a route

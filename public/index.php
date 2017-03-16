@@ -1,34 +1,60 @@
 <?php
 
-use PHPonboardSM\Repositories\UserRepository as UserRepository;
-use PHPonboardSM\Filters\AuthFilter as AuthFilter;
-use PHPonboardSM\Routes\Routes as Routes;
+use PHPonboardSM\Routes\Routes;
 
-require_once 'app/start.php';
+use PHPonboardSM\model\Person;
+use PHPonboardSM\model\birds\Pigeon;
+use PHPonboardSM\model\birds\Pinguin;
+use PHPonboardSM\model\Iexamples\Cat;
+use PHPonboardSM\model\Iexamples\Dog;
 
-//$user = new User();
-
-//$topic = new Topic();
-
-//$userRepo = new UserRepository();
-
-//$filter = new Authfilter();
+require_once '../app/start.php';
 
 $routes = new Routes();
 
 $routes->add('/', function(){
-	echo "Hello from home";
+    $person = new Person('John', 20);
+	echo $person->sentence();
 });
 
-$routes->add('/test', function(){
-	echo "Hello from test";
+$routes->add('/Iexamples', function(){
+    $dog = new Dog();
+
+    echo $dog->talk() . "</br>";
+
+    $cat = new Cat();
+    echo $cat->talk();
+
+});
+
+$routes->add('/birds', function(){
+
+    $pigeon = new Pigeon(true, 2);
+    $pinguin = new Pinguin(false, 2);
+
+	echo 'Pigeon has ' . $pigeon->getLegCount() . ' legs.' . "</br>";
+    echo $pigeon->pigeonFunction() . "</br>";
+
+	if($pigeon->canFly()) {
+	    echo 'Pigeon can fly' . "</br>";
+    }
+
+    echo 'Pinguin has ' . $pinguin->getLegCount() . ' legs.' . "</br>";
+    echo $pigeon->pigeonFunction() . "</br>";
+
+    if($pinguin->canFly()) {
+        echo 'Pinguin can fly.';
+    }
 });
 
 $routes->add('/params/(.*)', function($x = ''){
 	echo "Hello from params", $x;
 });
 
+
 echo $routes->run();
+
+?>
 
 
 
