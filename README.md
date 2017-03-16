@@ -3,27 +3,12 @@ php web app for onboarding procedure
 
 How to run app:
 
-1) Install XAMPP 
+1) Install composer
 
-https://www.apachefriends.org/download.html
+2) Navigate to phpOnboardApp folder and run **composer install** and ** composer dump-autoload -o** in console 
 
-2) Install composer 
+3) Navigate to public folder and run **php -S localhost:8000** in console
 
-https://getcomposer.org/download/
+4) Navigate through app in browser like http://localhost:8000/index.php
 
-3) Set up host for xampp Apache server 
-
-4) Clone app into xampp/htdocs in your xampp installation folder
-
-5) Run Apache server from xampp app
-
-6) Run console in phpOnBoardApp folder
-
-7) Run command composer dump_autoload -o in console
-
-8) Route to app in browser with http://localhost:5555/phpOnboardApp/ if your xampp Apache host is set to 5555
-
-9) Thats it!
-
-
-
+5) For other routes add ?route=birds (other routes are Iexamples and params/), like http://localhost:8000/index.php?route=birds
