@@ -1,5 +1,5 @@
 <?php
-namespace PHPonboardSM\Model\Iexamples;
+namespace PhpOnboardSm\Model\Iexamples;
 
 class Cat implements TalkInterface
 {

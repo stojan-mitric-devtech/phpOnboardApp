@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPonboardSM\Model\Birds;
+namespace PhpOnboardSm\Model\Birds;
 
 class Pigeon extends Bird
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPonboardSM\Model;
+namespace PhpOnboardSm\Model;
 
 class Person
 {

@@ -1,12 +1,12 @@
 <?php
 
-use PHPonboardSM\Routes\Routes;
+use PhpOnboardSm\Routes\Routes;
 
-use PHPonboardSM\Model\Person;
-use PHPonboardSM\Model\Birds\Pigeon;
-use PHPonboardSM\Model\Birds\Pinguin;
-use PHPonboardSM\Model\Iexamples\Cat;
-use PHPonboardSM\Model\Iexamples\Dog;
+use PhpOnboardSm\Model\Person;
+use PhpOnboardSm\Model\Birds\Pigeon;
+use PhpOnboardSm\Model\Birds\Pinguin;
+use PhpOnboardSm\Model\Iexamples\Cat;
+use PhpOnboardSm\Model\Iexamples\Dog;
 
 require_once '../app/start.php';
 
