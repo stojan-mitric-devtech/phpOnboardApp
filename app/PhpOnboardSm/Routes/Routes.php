@@ -1,6 +1,13 @@
 <?php
 namespace PhpOnboardSm\Routes;
 
+/*
+
+Author: Stojan Mitric
+Class Routes defines routes of the app.
+
+*/
+
 class Routes
 {
     private $uri = array();
@@ -16,9 +23,12 @@ class Routes
     {
         $url = isset($_GET['route']) ? '/' . $_GET['route'] : '/';
 
-        foreach ($this->uri as $key => $value) {
+        foreach ($this->uri as $key => $value)
+        {
 
-            if (preg_match("#^$value$#", $url, $params)) {
+            if (preg_match("#^$value$#", $url, $params))
+            {
+
                 array_shift($params);
                 call_user_func_array($this->callback[$key], $params);
 

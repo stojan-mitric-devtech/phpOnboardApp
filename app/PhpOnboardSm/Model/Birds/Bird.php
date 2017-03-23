@@ -1,5 +1,13 @@
 <?php
 
+/*
+
+Author: Stojan Mitric
+
+Class Bird is parent class for classes Pigeon and Pinguin.
+
+*/
+
 namespace PhpOnboardSm\Model\Birds;
 
 class Bird

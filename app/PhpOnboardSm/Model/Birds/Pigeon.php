@@ -1,6 +1,16 @@
 <?php
 
+/*
+
+Author: Stojan Mitric
+
+Class Pigeon is child class of superclass Bird.
+
+*/
+
 namespace PhpOnboardSm\Model\Birds;
+
+
 
 class Pigeon extends Bird
 {

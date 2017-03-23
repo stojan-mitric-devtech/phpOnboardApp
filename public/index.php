@@ -14,8 +14,10 @@ use PhpOnboardSm\Model\Iexamples\Dog;
 
 require_once '../app/start.php';
 
+//instantiation of new Routes object
 $routes = new Routes();
 
+//adding few routes to app
 $routes->add('/', function () {
     $person = new Person('John', 20);
     echo $person->sentence();
@@ -55,6 +57,7 @@ $routes->add('/params/(.*)', function ($x = '') {
     echo "Hello from params", $x;
 });
 
+//running the routes
 echo $routes->run();
 
 ?>

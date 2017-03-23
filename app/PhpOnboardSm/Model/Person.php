@@ -1,5 +1,12 @@
 <?php
 
+/*
+
+Author: Stojan Mitric
+Class Person represents a Person with attributes name and age.
+
+*/
+
 namespace PhpOnboardSm\Model;
 
 class Person
