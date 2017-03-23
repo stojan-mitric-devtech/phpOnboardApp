@@ -23,6 +23,7 @@ class Bird
     {
         return $this->legCount;
     }
+
 }
 
 ?>

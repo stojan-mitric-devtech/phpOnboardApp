@@ -3,9 +3,13 @@
 use PhpOnboardSm\Routes\Routes;
 
 use PhpOnboardSm\Model\Person;
+
 use PhpOnboardSm\Model\Birds\Pigeon;
+
 use PhpOnboardSm\Model\Birds\Pinguin;
+
 use PhpOnboardSm\Model\Iexamples\Cat;
+
 use PhpOnboardSm\Model\Iexamples\Dog;
 
 require_once '../app/start.php';
