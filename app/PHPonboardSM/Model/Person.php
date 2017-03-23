@@ -1,8 +1,9 @@
 <?php
 
-namespace PHPonboardSM\model;
+namespace PHPonboardSM\Model;
 
-class Person {
+class Person
+{
     public $name;
     public $age;
 
@@ -12,15 +13,18 @@ class Person {
         $this->age = $age;
     }
 
-    public function sentence() {
+    public function sentence()
+    {
         return $this->name . ' is ' . $this->age . ' years old';
     }
 
-    public function getName() {
+    public function getName()
+    {
         return $this->name;
     }
 
-    public function getAge() {
+    public function getAge()
+    {
         return $this->age;
     }
 }

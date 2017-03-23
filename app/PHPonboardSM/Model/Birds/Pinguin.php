@@ -1,10 +1,11 @@
 <?php
 
-namespace PHPonboardSM\model\birds;
+namespace PHPonboardSM\Model\Birds;
 
 class Pinguin extends Bird
 {
-    public function pinguinFunction() {
+    public function pinguinFunction()
+    {
         echo "This is from pinguin function";
     }
 }

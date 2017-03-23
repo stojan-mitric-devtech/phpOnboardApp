@@ -1,8 +1,10 @@
 <?php
 
-namespace PHPonboardSM\model\Iexamples;
+namespace PHPonboardSM\Model\Iexamples;
 
 interface TalkInterface
 {
     public function talk();
 }
+
+?>

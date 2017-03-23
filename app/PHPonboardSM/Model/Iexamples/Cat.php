@@ -1,12 +1,13 @@
 <?php
-namespace PHPonboardSM\model\Iexamples;
+namespace PHPonboardSM\Model\Iexamples;
 
 class Cat implements TalkInterface
 {
     public function talk()
     {
-        // TODO: Implement talk() method.
         return "mjau";
     }
 
 }
+
+?>

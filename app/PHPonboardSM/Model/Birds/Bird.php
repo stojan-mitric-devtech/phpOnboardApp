@@ -1,7 +1,9 @@
 <?php
 
-namespace PHPonboardSM\model\birds;
-class Bird {
+namespace PHPonboardSM\Model\Birds;
+
+class Bird
+{
 
     protected $canFly;
     protected $legCount;
@@ -12,11 +14,13 @@ class Bird {
         $this->legCount = $legCount;
     }
 
-    public function canFly() {
+    public function canFly()
+    {
         return $this->canFly;
     }
 
-    public function getLegCount() {
+    public function getLegCount()
+    {
         return $this->legCount;
     }
 }
